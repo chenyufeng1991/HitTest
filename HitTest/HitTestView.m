@@ -6,22 +6,22 @@
 //  Copyright © 2016 chenyufengweb. All rights reserved.
 //
 
-#import "BottomView.h"
+#import "HitTestView.h"
 
-@implementation BottomView
+@implementation HitTestView
 
-#if 0
+#if 1
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
+    NSLog(@"tag = %ld,是否点击在该视图：%@",self.tag,[NSNumber numberWithBool:[super pointInside:point withEvent:event]]);
+
     UIView *hitView = [super hitTest:point withEvent:event];
     if (hitView == self)
     {
-        NSLog(@"%s,hitView == self",__FUNCTION__);
         return nil;
     }
     else
     {
-        NSLog(@"%s,hitView != self",__FUNCTION__);
         return hitView;
     }
 

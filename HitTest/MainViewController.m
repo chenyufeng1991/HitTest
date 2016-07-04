@@ -8,30 +8,21 @@
 
 #import "MainViewController.h"
 #import "Masonry.h"
-#import "TopView.h"
-#import "BottomView.h"
+#import "HitTestView.h"
 
 @interface MainViewController ()
 
 @end
 
-/**
- *  - (nullable UIView *)hitTest:(CGPoint)point withEvent:(nullable UIEvent *)event;   
- // recursively calls -pointInside:withEvent:. point is in the receiver's coordinate system
- 
- 
- - (BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event;   
- // default returns YES if point is in bounds
-
- */
 @implementation MainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    BottomView *bottomView = [[BottomView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    HitTestView *bottomView = [[HitTestView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     bottomView.backgroundColor = [UIColor grayColor];
+    bottomView.tag = 101;
     [self.view addSubview:bottomView];
     [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
@@ -42,17 +33,19 @@
     UITapGestureRecognizer *bottomTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBottomView:)];
     [bottomView addGestureRecognizer:bottomTap];
 
-    TopView *topView = [[TopView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    HitTestView *topView = [[HitTestView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     topView.backgroundColor = [UIColor yellowColor];
+    topView.tag = 102;
     [bottomView addSubview:topView];
     [topView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(bottomView);
+        make.top.equalTo(bottomView.mas_bottom).offset(-50);
+        make.left.equalTo(bottomView.mas_right).offset(-50);
         make.height.equalTo(@100);
         make.width.equalTo(@100);
     }];
-
     UITapGestureRecognizer *topTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTopView:)];
     [topView addGestureRecognizer:topTap];
+
 }
 
 - (void)tapBottomView:(id)sender
