@@ -6,9 +6,9 @@
 //  Copyright © 2016 chenyufengweb. All rights reserved.
 //
 
-#import "RewriteAllView.h"
+#import "RewriteSubView.h"
 
-@implementation RewriteAllView
+@implementation RewriteSubView
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {

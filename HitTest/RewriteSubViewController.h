@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RewriteAllViewController : UIViewController
+@interface RewriteSubViewController : UIViewController
 
 @end

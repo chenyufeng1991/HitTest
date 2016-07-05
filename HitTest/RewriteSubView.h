@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RewriteAllView : UIView
+@interface RewriteSubView : UIView
 
 @property (nonatomic, strong) UIView *bottom;
 @property (nonatomic, strong) UIView *top;

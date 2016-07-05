@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "RewriteTopViewController.h"
 #import "RewriteSuperViewController.h"
-#import "RewriteAllViewController.h"
+#import "RewriteSubViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -81,7 +81,7 @@
 
         case 2:
         {
-            RewriteAllViewController *vc = [[RewriteAllViewController alloc] init];
+            RewriteSubViewController *vc = [[RewriteSubViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

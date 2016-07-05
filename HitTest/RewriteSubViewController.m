@@ -6,15 +6,15 @@
 //  Copyright © 2016 chenyufengweb. All rights reserved.
 //
 
-#import "RewriteAllViewController.h"
+#import "RewriteSubViewController.h"
 #import "Masonry.h"
-#import "RewriteAllView.h"
+#import "RewriteSubView.h"
 
-@interface RewriteAllViewController ()
+@interface RewriteSubViewController ()
 
 @end
 
-@implementation RewriteAllViewController
+@implementation RewriteSubViewController
 
 - (void)viewDidLoad
 {
@@ -32,7 +32,7 @@
     UITapGestureRecognizer *bottomTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBottomView:)];
     [bottomView addGestureRecognizer:bottomTap];
 
-    RewriteAllView *topView = [[RewriteAllView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    RewriteSubView *topView = [[RewriteSubView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     topView.backgroundColor = [UIColor yellowColor];
     topView.tag = 102;
     [bottomView addSubview:topView];
