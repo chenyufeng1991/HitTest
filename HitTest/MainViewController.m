@@ -11,6 +11,7 @@
 #import "RewriteTopViewController.h"
 #import "RewriteSuperViewController.h"
 #import "RewriteSubViewController.h"
+#import "RewriteAllViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,7 +35,7 @@
         make.edges.equalTo(self.view);
     }];
 
-    self.myArray = [[NSArray alloc] initWithObjects:@"重写顶部View",@"重写父视图",@"重写所有视图", nil];
+    self.myArray = [[NSArray alloc] initWithObjects:@"重写顶部View",@"重写父视图",@"重写子视图2",@"重新所有视图", nil];
 
 }
 
@@ -82,6 +83,13 @@
         case 2:
         {
             RewriteSubViewController *vc = [[RewriteSubViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+
+        case 3:
+        {
+            RewriteAllViewController *vc = [[RewriteAllViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
