@@ -13,7 +13,6 @@
 		71680B0E1D29F53900A74EA7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71680B0D1D29F53900A74EA7 /* MainViewController.m */; };
 		71680B131D29F53900A74EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71680B121D29F53900A74EA7 /* Assets.xcassets */; };
 		71680B161D29F53900A74EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71680B141D29F53900A74EA7 /* LaunchScreen.storyboard */; };
-		71680B231D29FA4300A74EA7 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71680B221D29FA4300A74EA7 /* HitTestView.m */; };
 		71DFE72C1D2BABC6008F69F9 /* RewriteTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE72A1D2BABC6008F69F9 /* RewriteTopViewController.m */; };
 		71DFE72D1D2BABC6008F69F9 /* RewriteTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DFE72B1D2BABC6008F69F9 /* RewriteTopViewController.xib */; };
 		71DFE7311D2BACA0008F69F9 /* RewriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7301D2BACA0008F69F9 /* RewriteView.m */; };
@@ -32,8 +31,6 @@
 		71680B121D29F53900A74EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71680B151D29F53900A74EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71680B171D29F53900A74EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71680B211D29FA4300A74EA7 /* HitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
-		71680B221D29FA4300A74EA7 /* HitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
 		71DFE7291D2BABC6008F69F9 /* RewriteTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteTopViewController.h; sourceTree = "<group>"; };
 		71DFE72A1D2BABC6008F69F9 /* RewriteTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteTopViewController.m; sourceTree = "<group>"; };
 		71DFE72B1D2BABC6008F69F9 /* RewriteTopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewriteTopViewController.xib; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 			children = (
 				71DFE7281D2BA835008F69F9 /* 重写父视图 */,
 				71DFE7271D2BA813008F69F9 /* 重写顶部视图 */,
-				71680B1D1D29F82900A74EA7 /* View */,
 				71680B091D29F53900A74EA7 /* AppDelegate.h */,
 				71680B0A1D29F53900A74EA7 /* AppDelegate.m */,
 				71680B0C1D29F53900A74EA7 /* MainViewController.h */,
@@ -103,15 +99,6 @@
 				71680B071D29F53900A74EA7 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		71680B1D1D29F82900A74EA7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				71680B211D29FA4300A74EA7 /* HitTestView.h */,
-				71680B221D29FA4300A74EA7 /* HitTestView.m */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		71DFE7271D2BA813008F69F9 /* 重写顶部视图 */ = {
@@ -296,7 +283,6 @@
 				71680B0E1D29F53900A74EA7 /* MainViewController.m in Sources */,
 				71DFE73A1D2BB1AE008F69F9 /* RewriteSuperView.m in Sources */,
 				71680B0B1D29F53900A74EA7 /* AppDelegate.m in Sources */,
-				71680B231D29FA4300A74EA7 /* HitTestView.m in Sources */,
 				71DFE7311D2BACA0008F69F9 /* RewriteView.m in Sources */,
 				71DFE7351D2BB16A008F69F9 /* RewriteSuperViewController.m in Sources */,
 				71DFE72C1D2BABC6008F69F9 /* RewriteTopViewController.m in Sources */,
