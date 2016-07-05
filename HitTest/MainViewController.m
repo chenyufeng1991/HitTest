@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "HitTestView.h"
 #import "RewriteTopViewController.h"
+#import "RewriteSuperViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -72,7 +73,7 @@
         make.edges.equalTo(self.view);
     }];
 
-    self.myArray = [[NSArray alloc] initWithObjects:@"重写顶部View", nil];
+    self.myArray = [[NSArray alloc] initWithObjects:@"重写顶部View",@"重写父视图", nil];
 
 }
 
@@ -116,6 +117,13 @@
         case 0:
         {
             RewriteTopViewController *vc = [[RewriteTopViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+
+        case 1:
+        {
+            RewriteSuperViewController *vc = [[RewriteSuperViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

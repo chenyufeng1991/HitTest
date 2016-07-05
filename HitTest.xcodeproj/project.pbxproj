@@ -17,6 +17,9 @@
 		71DFE72C1D2BABC6008F69F9 /* RewriteTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE72A1D2BABC6008F69F9 /* RewriteTopViewController.m */; };
 		71DFE72D1D2BABC6008F69F9 /* RewriteTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DFE72B1D2BABC6008F69F9 /* RewriteTopViewController.xib */; };
 		71DFE7311D2BACA0008F69F9 /* RewriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7301D2BACA0008F69F9 /* RewriteView.m */; };
+		71DFE7351D2BB16A008F69F9 /* RewriteSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7331D2BB16A008F69F9 /* RewriteSuperViewController.m */; };
+		71DFE7361D2BB16A008F69F9 /* RewriteSuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DFE7341D2BB16A008F69F9 /* RewriteSuperViewController.xib */; };
+		71DFE73A1D2BB1AE008F69F9 /* RewriteSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,11 @@
 		71DFE72B1D2BABC6008F69F9 /* RewriteTopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewriteTopViewController.xib; sourceTree = "<group>"; };
 		71DFE72F1D2BACA0008F69F9 /* RewriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteView.h; sourceTree = "<group>"; };
 		71DFE7301D2BACA0008F69F9 /* RewriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteView.m; sourceTree = "<group>"; };
+		71DFE7321D2BB16A008F69F9 /* RewriteSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteSuperViewController.h; sourceTree = "<group>"; };
+		71DFE7331D2BB16A008F69F9 /* RewriteSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteSuperViewController.m; sourceTree = "<group>"; };
+		71DFE7341D2BB16A008F69F9 /* RewriteSuperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewriteSuperViewController.xib; sourceTree = "<group>"; };
+		71DFE7381D2BB1AE008F69F9 /* RewriteSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteSuperView.h; sourceTree = "<group>"; };
+		71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteSuperView.m; sourceTree = "<group>"; };
 		A61856C0F137E33D60A23EA5 /* Pods-HitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitTest/Pods-HitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CFA39B6EB8D5244E5EBE5A68 /* libPods-HitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F926C75A1038A5749F7720 /* Pods-HitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HitTest/Pods-HitTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 		71DFE7281D2BA835008F69F9 /* 重写父视图 */ = {
 			isa = PBXGroup;
 			children = (
+				71DFE7371D2BB179008F69F9 /* View */,
+				71DFE7321D2BB16A008F69F9 /* RewriteSuperViewController.h */,
+				71DFE7331D2BB16A008F69F9 /* RewriteSuperViewController.m */,
+				71DFE7341D2BB16A008F69F9 /* RewriteSuperViewController.xib */,
 			);
 			name = "重写父视图";
 			sourceTree = "<group>";
@@ -129,6 +141,15 @@
 			children = (
 				71DFE72F1D2BACA0008F69F9 /* RewriteView.h */,
 				71DFE7301D2BACA0008F69F9 /* RewriteView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		71DFE7371D2BB179008F69F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71DFE7381D2BB1AE008F69F9 /* RewriteSuperView.h */,
+				71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -213,6 +234,7 @@
 				71680B161D29F53900A74EA7 /* LaunchScreen.storyboard in Resources */,
 				71DFE72D1D2BABC6008F69F9 /* RewriteTopViewController.xib in Resources */,
 				71680B131D29F53900A74EA7 /* Assets.xcassets in Resources */,
+				71DFE7361D2BB16A008F69F9 /* RewriteSuperViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71680B0E1D29F53900A74EA7 /* MainViewController.m in Sources */,
+				71DFE73A1D2BB1AE008F69F9 /* RewriteSuperView.m in Sources */,
 				71680B0B1D29F53900A74EA7 /* AppDelegate.m in Sources */,
 				71680B231D29FA4300A74EA7 /* HitTestView.m in Sources */,
 				71DFE7311D2BACA0008F69F9 /* RewriteView.m in Sources */,
+				71DFE7351D2BB16A008F69F9 /* RewriteSuperViewController.m in Sources */,
 				71DFE72C1D2BABC6008F69F9 /* RewriteTopViewController.m in Sources */,
 				71680B081D29F53900A74EA7 /* main.m in Sources */,
 			);
