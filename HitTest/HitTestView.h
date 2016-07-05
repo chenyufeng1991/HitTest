@@ -10,4 +10,7 @@
 
 @interface HitTestView : UIView
 
+@property (nonatomic, strong) UIView *bottom;
+@property (nonatomic, strong) UIView *top;
+
 @end

@@ -10,15 +10,16 @@
 
 @implementation HitTestView
 
-#if 1
+#if 0
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
-    NSLog(@"tag = %ld,是否点击在该视图：%@",self.tag,[NSNumber numberWithBool:[super pointInside:point withEvent:event]]);
-
+    NSLog(@"tag = %ld",self.tag);
     UIView *hitView = [super hitTest:point withEvent:event];
-    if (hitView == self)
+    NSLog(@"Return tag = %ld",self.tag);
+
+    if ([hitView isEqual:self.top])
     {
-        return nil;
+        return self;
     }
     else
     {
@@ -28,5 +29,20 @@
     return nil;
 }
 #endif
+
+#if 1
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    CGPoint ttPoint = [self.bottom convertPoint:point fromView:self];
+    NSLog(@"point = %@;ttPoint = %@",NSStringFromCGPoint(point),NSStringFromCGPoint(ttPoint));
+    if ([self.bottom pointInside:ttPoint withEvent:event])
+    {
+        return self.bottom;
+    }
+
+    return [super hitTest:point withEvent:event];
+}
+#endif
+
 
 @end
