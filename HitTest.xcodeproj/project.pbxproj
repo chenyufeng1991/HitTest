@@ -19,6 +19,9 @@
 		71DFE7351D2BB16A008F69F9 /* RewriteSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7331D2BB16A008F69F9 /* RewriteSuperViewController.m */; };
 		71DFE7361D2BB16A008F69F9 /* RewriteSuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DFE7341D2BB16A008F69F9 /* RewriteSuperViewController.xib */; };
 		71DFE73A1D2BB1AE008F69F9 /* RewriteSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */; };
+		71DFE7401D2BB9AD008F69F9 /* RewriteAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE73E1D2BB9AD008F69F9 /* RewriteAllViewController.m */; };
+		71DFE7411D2BB9AD008F69F9 /* RewriteAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DFE73F1D2BB9AD008F69F9 /* RewriteAllViewController.xib */; };
+		71DFE7441D2BB9F1008F69F9 /* RewriteAllView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DFE7431D2BB9F1008F69F9 /* RewriteAllView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,11 @@
 		71DFE7341D2BB16A008F69F9 /* RewriteSuperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewriteSuperViewController.xib; sourceTree = "<group>"; };
 		71DFE7381D2BB1AE008F69F9 /* RewriteSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteSuperView.h; sourceTree = "<group>"; };
 		71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteSuperView.m; sourceTree = "<group>"; };
+		71DFE73D1D2BB9AD008F69F9 /* RewriteAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteAllViewController.h; sourceTree = "<group>"; };
+		71DFE73E1D2BB9AD008F69F9 /* RewriteAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteAllViewController.m; sourceTree = "<group>"; };
+		71DFE73F1D2BB9AD008F69F9 /* RewriteAllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewriteAllViewController.xib; sourceTree = "<group>"; };
+		71DFE7421D2BB9F1008F69F9 /* RewriteAllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteAllView.h; sourceTree = "<group>"; };
+		71DFE7431D2BB9F1008F69F9 /* RewriteAllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteAllView.m; sourceTree = "<group>"; };
 		A61856C0F137E33D60A23EA5 /* Pods-HitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HitTest/Pods-HitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CFA39B6EB8D5244E5EBE5A68 /* libPods-HitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F926C75A1038A5749F7720 /* Pods-HitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HitTest/Pods-HitTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +87,7 @@
 		71680B051D29F53900A74EA7 /* HitTest */ = {
 			isa = PBXGroup;
 			children = (
+				71DFE73B1D2BB963008F69F9 /* 重写所有视图 */,
 				71DFE7281D2BA835008F69F9 /* 重写父视图 */,
 				71DFE7271D2BA813008F69F9 /* 重写顶部视图 */,
 				71680B091D29F53900A74EA7 /* AppDelegate.h */,
@@ -137,6 +146,26 @@
 			children = (
 				71DFE7381D2BB1AE008F69F9 /* RewriteSuperView.h */,
 				71DFE7391D2BB1AE008F69F9 /* RewriteSuperView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		71DFE73B1D2BB963008F69F9 /* 重写所有视图 */ = {
+			isa = PBXGroup;
+			children = (
+				71DFE73C1D2BB976008F69F9 /* View */,
+				71DFE73D1D2BB9AD008F69F9 /* RewriteAllViewController.h */,
+				71DFE73E1D2BB9AD008F69F9 /* RewriteAllViewController.m */,
+				71DFE73F1D2BB9AD008F69F9 /* RewriteAllViewController.xib */,
+			);
+			name = "重写所有视图";
+			sourceTree = "<group>";
+		};
+		71DFE73C1D2BB976008F69F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71DFE7421D2BB9F1008F69F9 /* RewriteAllView.h */,
+				71DFE7431D2BB9F1008F69F9 /* RewriteAllView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -221,6 +250,7 @@
 				71680B161D29F53900A74EA7 /* LaunchScreen.storyboard in Resources */,
 				71DFE72D1D2BABC6008F69F9 /* RewriteTopViewController.xib in Resources */,
 				71680B131D29F53900A74EA7 /* Assets.xcassets in Resources */,
+				71DFE7411D2BB9AD008F69F9 /* RewriteAllViewController.xib in Resources */,
 				71DFE7361D2BB16A008F69F9 /* RewriteSuperViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +313,12 @@
 				71680B0E1D29F53900A74EA7 /* MainViewController.m in Sources */,
 				71DFE73A1D2BB1AE008F69F9 /* RewriteSuperView.m in Sources */,
 				71680B0B1D29F53900A74EA7 /* AppDelegate.m in Sources */,
+				71DFE7441D2BB9F1008F69F9 /* RewriteAllView.m in Sources */,
 				71DFE7311D2BACA0008F69F9 /* RewriteView.m in Sources */,
 				71DFE7351D2BB16A008F69F9 /* RewriteSuperViewController.m in Sources */,
 				71DFE72C1D2BABC6008F69F9 /* RewriteTopViewController.m in Sources */,
 				71680B081D29F53900A74EA7 /* main.m in Sources */,
+				71DFE7401D2BB9AD008F69F9 /* RewriteAllViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
