@@ -32,7 +32,7 @@
     UITapGestureRecognizer *bottomTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBottomView:)];
     [bottomView addGestureRecognizer:bottomTap];
 
-    RewriteAllView *topView = [[RewriteAllView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     topView.backgroundColor = [UIColor yellowColor];
     topView.tag = 102;
     [bottomView addSubview:topView];
@@ -43,8 +43,6 @@
     }];
     UITapGestureRecognizer *topTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTopView:)];
     [topView addGestureRecognizer:topTap];
-
-    topView.top = topView;
 }
 
 - (void)tapBottomView:(id)sender

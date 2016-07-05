@@ -12,6 +12,7 @@
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
+    NSLog(@"tag=====%ld",self.tag);
     CGPoint bottomPoint = [self.bottom convertPoint:point fromView:self];
     if ([self.bottom pointInside:bottomPoint withEvent:event])
     {
